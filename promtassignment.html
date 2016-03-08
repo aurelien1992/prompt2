@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>manipulating html</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+
+    <script>
+    $(document).ready(function(){
+      // var response = prompt("What is your favorite food?");
+      // console.log(response);
+      var userName = prompt("What's your name ?");
+      var colorTshirt = prompt("What's the color of your T-Shirt ?")
+
+    //  var result = $("h1").css("color", "orange");
+
+    //  console.log(result)
+
+       $("h1").html(userName);
+       $(".color").css("backgroundColor",colorTshirt);
+       $(".color2").css("backgroundColor",colorTshirt);
+       $(".color3").css("backgroundColor",colorTshirt);
+
+
+    });
+    </script>
+    <style>
+
+
+
+      .color {
+        position: absolute;
+        width : 80px;
+        height: 150px;
+        top: 50px;
+        left: 140px;
+
+      }
+
+      .color2{
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        top: 50px;
+        left: 220px;
+
+      }
+
+      .color3 {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        top: 50px;
+        left: 120px;
+
+      }
+
+      h1{
+          position: absolute;
+          color:black;
+          top: 100px;
+          left: 150px;
+          font-size: 12px;
+          font-family: sans-serif;
+          text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+
+      }
+
+      </style>
+  </head>
+
+  <body>
+
+
+      <div class="leftsleeve color3"></div>
+      <div class="frontshirt color"></div>
+      <div class="rightsleeve color2"></div>
+      <h1></h1>
+
+  </body>
+
+</html>
